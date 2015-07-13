@@ -1,0 +1,1 @@
+avconv -f image2 -r 30 -i %04d.jpg  -r:v 30 -c:v mpeg4 -trellis 2 -cmp 2 -subcmp 2 -g 300 -qscale 4 -pass 1 -strict experimental "animation.m4v"
